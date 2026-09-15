@@ -1,0 +1,9 @@
+.env
+*.local.json
+.cache/
+projects/
+output/
+node_modules/
+__pycache__/
+*.pyc
+
