@@ -1,5 +1,7 @@
 # OpenMontage AI Video Workflow
 
+English: [README.en.md](README.en.md)
+
 由 RootaAI 发起和维护的开源 Codex 视频工作流。
 
 想做小红书、抖音、Bilibili 视频，却不知道选题、文案、分镜和素材怎么组织？这套工作流给 Codex 一套可复用的方法：告诉它你想做什么，它会先检查环境，再带你从想法走到成片。

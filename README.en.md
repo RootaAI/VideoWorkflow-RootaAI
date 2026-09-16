@@ -1,5 +1,7 @@
 # OpenMontage AI Video Workflow
 
+中文：[README.md](README.md)
+
 An open-source Codex video workflow initiated and maintained by RootaAI.
 
 Want to make Xiaohongshu, Douyin, or Bilibili videos but do not know what to choose, write, shoot, or collect? Tell Codex what you want to make. This workflow gives it reusable methods for choosing a format, writing a script, planning shots, tracking assets, and checking delivery quality.
