@@ -28,7 +28,7 @@ The public repository contains portable methods, templates, and safety rules—n
 
 ## Contact
 
-- Xiaohongshu: [@若塔AI](https://www.xiaohongshu.com/)
+- Xiaohongshu: @若塔AI
 - RootaAI official website: [RootaAI.One](https://RootaAI.One)
 
 See the Chinese guide in [README.md](README.md), then read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.

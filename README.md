@@ -58,5 +58,5 @@ English: [README.en.md](README.en.md)
 
 ## 联系我们
 
-- 小红书：[@若塔AI](https://www.xiaohongshu.com/)
+- 小红书：@若塔AI
 - RootaAI 官方主页：[RootaAI.One](https://RootaAI.One)
