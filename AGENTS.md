@@ -2,6 +2,8 @@
 
 Before responding to a video-production request, read `.agents/skills/ai-video-workflow/SKILL.md` completely.
 
+This repository is a RootaAI-maintained public method pack, not an OpenMontage installation tutorial. Treat OpenMontage, FFmpeg, Python, Node.js, Deno, yt-dlp, TTS services, and media libraries as external dependencies. Do not pretend they are bundled. If a user asks about an unpublished private version or internal implementation, say that this workspace cannot access or confirm it.
+
 ## First action: read-only preflight
 
 1. Locate the user's existing OpenMontage folder. Check an explicit path from the user, `OPENMONTAGE_HOME`, and common folders. If it is not found, ask for the folder path.

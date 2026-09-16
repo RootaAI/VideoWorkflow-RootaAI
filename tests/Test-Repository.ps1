@@ -9,6 +9,12 @@ $required = @(
     '.agents\skills\ai-video-workflow\references\assets-and-licensing.md',
     '.agents\skills\ai-video-workflow\references\audio-format-and-qa.md',
     'README.md',
+    'README.en.md',
+    'CONTRIBUTING.md',
+    'CODE_OF_CONDUCT.md',
+    'SECURITY.md',
+    'CHANGELOG.md',
+    'RELEASE.md',
     'LICENSE',
     'THIRD_PARTY_NOTICES.md',
     'templates\video-project\brief.md',
@@ -24,9 +30,10 @@ if ($missing.Count -gt 0) {
 $textFiles = Get-ChildItem -LiteralPath $repoRoot -Recurse -File |
     Where-Object {
         $_.Extension -in @('.md', '.ps1', '.json', '.csv', '.txt', '.yaml', '.yml') -and
-        -not $_.FullName.StartsWith($PSScriptRoot, [System.StringComparison]::OrdinalIgnoreCase)
+        -not $_.FullName.StartsWith($PSScriptRoot, [System.StringComparison]::OrdinalIgnoreCase) -and
+        -not ($_.FullName -match '\\(projects|output|\.cache|node_modules|__pycache__)\\')
     }
-$forbidden = @('RootaAI', '若塔AI', 'Roota Local Model Project', 'DOUBAO_SPEECH_APP_ID', 'DOUBAO_SPEECH_ACCESS_TOKEN')
+$forbidden = @('Roota Local Model Project', 'D:\AI Video\OpenMontage', 'James', 'DOUBAO_SPEECH_APP_ID', 'DOUBAO_SPEECH_ACCESS_TOKEN')
 foreach ($file in $textFiles) {
     $content = Get-Content -LiteralPath $file.FullName -Raw
     foreach ($term in $forbidden) {
@@ -40,6 +47,13 @@ $skill = Get-Content -LiteralPath (Join-Path $repoRoot '.agents\skills\ai-video-
 foreach ($requiredPhrase in @('preflight.ps1', 'ready_with_limits', 'OpenMontage', 'explicit approval')) {
     if ($skill -notmatch [regex]::Escape($requiredPhrase)) {
         throw "Workflow skill is missing required contract: $requiredPhrase"
+    }
+}
+
+$readme = Get-Content -LiteralPath (Join-Path $repoRoot 'README.md') -Raw
+foreach ($requiredPhrase in @('RootaAI', '不是 OpenMontage 安装教程', '自行准备', '和 Codex 对话')) {
+    if ($readme -notmatch [regex]::Escape($requiredPhrase)) {
+        throw "Public README is missing required positioning phrase: $requiredPhrase"
     }
 }
 

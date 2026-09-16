@@ -7,6 +7,8 @@ description: Use when a beginner wants to plan or produce a faceless knowledge v
 
 Turn a plain-language goal into an approved, reproducible OpenMontage production. A working path is enough to begin; optional providers are choices, not automatic blockers.
 
+This is a public RootaAI-maintained method pack, not an OpenMontage installation lesson. External tools and dependencies are intentionally not bundled. Users may ask Codex to extend the workflow, but Codex must inspect the current files and dependencies before proposing or making a change.
+
 ## Start with facts
 
 Run `scripts/preflight.ps1 -OpenMontagePath '<path>' -Json` from the repository root.
@@ -46,4 +48,3 @@ OpenMontage's `AGENT_GUIDE.md`, selected `pipeline_defs/*.yaml`, stage director 
 Before paid generation or a consequential call, name the provider, model, reason, estimated cost, and whether it is a sample. Ask for explicit approval before installing dependencies, using paid services, changing provider/runtime, or accepting a lower-quality fallback.
 
 Preserve original media. Keep generated files inside the new project's directories. State truthfully whether assets were user-supplied, licensed stock, AI-generated elsewhere, or composed by OpenMontage.
-
