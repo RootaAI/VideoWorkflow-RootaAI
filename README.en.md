@@ -26,4 +26,9 @@ When OpenMontage and its `yt-dlp` dependency are installed, Codex can bring a UR
 
 The public repository contains portable methods, templates, and safety rules—not personal data, private projects, private voices, internal media, or unpublished configuration. Codex must not invent details about private versions that are not present in this folder.
 
+## Contact
+
+- Xiaohongshu: [@若塔AI](https://www.xiaohongshu.com/)
+- RootaAI official website: [RootaAI.One](https://RootaAI.One)
+
 See the Chinese guide in [README.md](README.md), then read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.

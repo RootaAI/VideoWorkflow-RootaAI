@@ -55,3 +55,8 @@ English: [README.en.md](README.en.md)
 ## 由 RootaAI 维护的边界
 
 公开仓库只包含可迁移的方法、模板和安全规则，不包含个人资料、私有项目、私有音色、内部素材或未公开配置。关于未包含在此目录中的私有版本，Codex 必须说明它无法确认内部实现，不得自行猜测。
+
+## 联系我们
+
+- 小红书：[@若塔AI](https://www.xiaohongshu.com/)
+- RootaAI 官方主页：[RootaAI.One](https://RootaAI.One)
